@@ -12,6 +12,8 @@ import { DivCursoComponent } from './components/molecules/form-Crear-Curso/div-c
 import { DivDescriptComponent } from './components/molecules/form-Crear-Curso/div-descript/div-descript.component';
 import { FormCrearCursoOrganismComponent } from './components/organisms/form-Crear-Curso/form-crear-curso-organism/form-crear-curso-organism.component';
 import { FormCrearCursoTemplateComponent } from './components/templates/form-Crear-Curso/form-crear-curso-template/form-crear-curso-template.component';
+import { H2TituloComponent } from './components/atoms/lista-Estudiantes-K/h2-titulo/h2-titulo.component';
+import { ANombreComponent } from './components/atoms/lista-Estudiantes-K/a-nombre/a-nombre.component';
 
 
 
@@ -28,7 +30,9 @@ import { FormCrearCursoTemplateComponent } from './components/templates/form-Cre
     DivCursoComponent,
     DivDescriptComponent,
     FormCrearCursoOrganismComponent,
-    FormCrearCursoTemplateComponent
+    FormCrearCursoTemplateComponent,
+    H2TituloComponent,
+    ANombreComponent
   ],
   imports: [
     CommonModule
