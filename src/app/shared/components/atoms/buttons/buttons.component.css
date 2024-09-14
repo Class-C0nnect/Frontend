@@ -1,4 +1,4 @@
-button{
+.button{
     --grad-clr1: #da8a00;
     --grad-clr2: #da8a00;
     position: relative;
@@ -12,30 +12,30 @@ button{
     transition: background-color 75ms ease-in-out, color 75ms ease-in-out;
 }
 
-button.primary {
+.button.primary {
     border: 1px solid var(--grad-clr1);
     background: var(--grad-clr2);
     color: #fff;
 }
 
-button.primary:hover {
+.button.primary:hover {
     background: #fff;
     color: var(--grad-clr2);
 }
 
 
-button.secondary {
+.button.secondary {
     border: 1px solid var(--grad-clr1);
     background: #fff;
     color: var(--grad-clr2);
 }
 
-button.secondary:hover {
+.button.secondary:hover {
     background: var(--grad-clr2);
     color: #fff;
 }
 
-button::after {
+.button::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -43,10 +43,41 @@ button::after {
     height: 100%;
 }
 
-button:active {
+.button:active {
     transform: translate3d(0,2px,0);
 }
 
-button:active::after {
+.button:active::after {
     background-color: rgba(255, 166, 0, 0.171);
 }
+button{
+    margin-top:30px;
+}
+
+/*home*/
+.buttonH{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #79f1e5;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+    
+    
+  }
+  
+
+  
+  .buttonH:hover span{
+    width: 100%;
+  }
+  
+  .buttonH:hover{
+    border: none;
+  }
+  

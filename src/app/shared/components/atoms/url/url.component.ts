@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-url',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './url.component.css'
 })
 export class UrlComponent {
-  productId = 627738; 
+  @Input() href: string = '';  // Texto del encabezado
+  @Input() class: string = '';
+  @Input() text: string = '';
 }

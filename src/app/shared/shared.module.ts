@@ -5,20 +5,21 @@ import { UrlComponent } from './components/atoms/url/url.component';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from '../app.component';
 import { H1Component } from './components/atoms/h1/h1.component';
-import { SidebarComponent } from './components/molecules/sidebar/sidebar.component';
 
 import { ButtonsComponent } from './components/atoms/buttons/buttons.component';
 import { AvatarComponent } from './components/atoms/avatar/avatar.component';
 import { IconComponent } from './components/atoms/icon/icon.component';
 import { InputsComponent } from './components/atoms/inputs/inputs.component';
-import { FormComponent } from './components/molecules/form/form.component';
-import { TableComponent } from './components/molecules/table/table.component';
+
 import { AlertFormComponent } from './components/organisms/alert-form/alert-form.component';
-import { Login2Component } from './components/molecules/login2/login2.component';
-import { LoginPageTComponent } from './components/templates/login-page-t/login-page-t.component';
-import { HomePageTComponent } from './components/templates/home-page-t/home-page-t.component';
-import { TablePageTComponent } from './components/templates/table-page-t/table-page-t.component';
-import { FormGallinaTComponent } from './components/templates/form-gallina-t/form-gallina-t.component';
+import { H2Component } from './components/atoms/h2/h2.component';
+import { H3Component } from './components/atoms/h3/h3.component';
+import { PComponent } from './components/atoms/p/p.component';
+import { SidebarComponent } from './components/molecules/sidebar/sidebar.component';
+import { HomeComponent } from './components/molecules/home/home.component';
+import { SidebarprofeComponent } from './components/molecules/sidebarprofe/sidebarprofe.component';
+import { SidebaradminComponent } from './components/molecules/sidebaradmin/sidebaradmin.component';
+
 
 
 @NgModule({
@@ -30,15 +31,15 @@ import { FormGallinaTComponent } from './components/templates/form-gallina-t/for
     AvatarComponent,
     IconComponent,
     InputsComponent,
-    SidebarComponent,
-    FormComponent,
-    TableComponent,
     AlertFormComponent,
-    Login2Component,
-    LoginPageTComponent,
-    HomePageTComponent,
-    TablePageTComponent,
-    FormGallinaTComponent
+    H2Component,
+    H3Component,
+    PComponent,
+    SidebarComponent,
+  
+    HomeComponent,
+        SidebarprofeComponent,
+        SidebaradminComponent
   ],
   imports: [
     FormsModule,
@@ -50,14 +51,12 @@ import { FormGallinaTComponent } from './components/templates/form-gallina-t/for
     ButtonsComponent,
     AvatarComponent,
     IconComponent,
+    InputsComponent,
     SidebarComponent,
-    FormComponent,
-    TableComponent,
-    AlertFormComponent,
-    Login2Component,
-    LoginPageTComponent,
-    HomePageTComponent,
-    TablePageTComponent
+    SidebaradminComponent,
+    SidebarprofeComponent,
+    HomeComponent
+
 
   ]
 })

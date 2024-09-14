@@ -1,0 +1,27 @@
+.img{
+    width: 32px;
+    height: 32px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left:4px;
+}
+.logo2{
+    width: 420px;
+    height: 200px;
+    margin-left: 450px;
+    margin-top: 50px;
+
+}
+
+.profe{
+    margin-top: 70px;
+    margin-left:4px;
+    width: 100px;
+    height: 100px;
+}
+.tareas{
+    width: 35px;
+    height: 35px;
+}
