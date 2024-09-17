@@ -7,12 +7,14 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from '../app/core/interceptor/auth-interceptor/auth.interceptor';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { SaludGallinasRoutingModule } from './features/salud-gallinas/salud-gallinas-routing.module';
+import { RegisterComponent } from './shared/components/molecules/register/register.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+   
     
   ],
   imports: [
@@ -21,7 +23,8 @@ import { SaludGallinasRoutingModule } from './features/salud-gallinas/salud-gall
     SharedModule,
     AppRoutingModule,
     FormsModule,
-    SaludGallinasRoutingModule
+
+  
 
   ],
   providers: [

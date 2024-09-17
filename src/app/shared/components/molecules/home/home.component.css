@@ -68,15 +68,98 @@ background-position: center;
   line-height: 25px;
 }
 
-span{
-  background: #2f7a73;
-  height: 10%;
-  width: 10%;
+
+.buttonH1{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
   border-radius: 25px;
-  position: absolute;
+  font-weight: bold;
+  border: 2px solid #79f1e5;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+color: aliceblue;
   left: 0;
   bottom: 0;
   z-index: -1;
   transition: 0.5s;
+  
 }
-.span{margin-left: 500px;}
+
+
+
+
+button:hover{
+  border: none;
+  background-color: #87e1e4;
+  color:black;
+}
+
+.buttonH2{
+  margin-left:30px;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #79f1e5;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+  color: aliceblue;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+
+}
+
+
+/* The dropdown menu */
+
+.dropdown-menu a {
+  color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  text-align: center;
+
+  
+}
+.dropdown-menu{
+  right: 1px;
+  background-color: transparent;
+}
+
+.dropdown-menu a:hover {
+  background-color: #79f1e5;
+  color:black;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown button{
+  text-decoration: none;
+  color: white;
+
+}
+
+.dropdown button:hover{
+background-color: transparent;
+}
+

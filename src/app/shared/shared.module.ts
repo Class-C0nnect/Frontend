@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { RouterLink, RouterModule } from '@angular/router';
 import { UrlComponent } from './components/atoms/url/url.component';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from '../app.component';
@@ -19,6 +19,8 @@ import { SidebarComponent } from './components/molecules/sidebar/sidebar.compone
 import { HomeComponent } from './components/molecules/home/home.component';
 import { SidebarprofeComponent } from './components/molecules/sidebarprofe/sidebarprofe.component';
 import { SidebaradminComponent } from './components/molecules/sidebaradmin/sidebaradmin.component';
+import { RegisterComponent } from './components/molecules/register/register.component';
+import { LoginComponent } from './components/molecules/login/login.component';
 
 
 
@@ -36,14 +38,17 @@ import { SidebaradminComponent } from './components/molecules/sidebaradmin/sideb
     H3Component,
     PComponent,
     SidebarComponent,
-  
     HomeComponent,
         SidebarprofeComponent,
-        SidebaradminComponent
+        SidebaradminComponent,
+        RegisterComponent,
+        LoginComponent
   ],
   imports: [
     FormsModule,
-    CommonModule
+    CommonModule,
+    RouterLink,
+    RouterModule
   ],
   exports: [
     UrlComponent,
@@ -55,7 +60,9 @@ import { SidebaradminComponent } from './components/molecules/sidebaradmin/sideb
     SidebarComponent,
     SidebaradminComponent,
     SidebarprofeComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent,
+    LoginComponent
 
 
   ]

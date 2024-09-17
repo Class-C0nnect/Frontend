@@ -55,7 +55,7 @@ button{
 }
 
 /*home*/
-.buttonH{
+.buttonH1{
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -73,11 +73,15 @@ button{
   
 
   
-  .buttonH:hover span{
+  .buttonH1:hover span{
     width: 100%;
   }
   
-  .buttonH:hover{
+  .buttonH1:hover{
     border: none;
+  }
+
+  .buttonH2{
+    margin-left:100px;
   }
   
