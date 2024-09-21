@@ -14,7 +14,14 @@ import { FormCrearCursoOrganismComponent } from './components/organisms/form-Cre
 import { FormCrearCursoTemplateComponent } from './components/templates/form-Crear-Curso/form-crear-curso-template/form-crear-curso-template.component';
 import { H2TituloComponent } from './components/atoms/lista-Estudiantes-K/h2-titulo/h2-titulo.component';
 import { ANombreComponent } from './components/atoms/lista-Estudiantes-K/a-nombre/a-nombre.component';
-
+import { ButtonsComponent } from './components/atoms/refactorizacion/buttons/buttons.component';
+import { H1Component } from './components/atoms/refactorizacion/h1/h1.component';
+import { H2Component } from './components/atoms/refactorizacion/h2/h2.component';
+import { H3Component } from './components/atoms/refactorizacion/h3/h3.component';
+import { IconComponent } from './components/atoms/refactorizacion/icon/icon.component';
+import { PComponent } from './components/atoms/refactorizacion/p/p.component';
+import { UrlComponent } from './components/atoms/refactorizacion/url/url.component';
+import { SubpaginasComponent } from './components/molecules/subpaginas/subpaginas.component';
 
 
 @NgModule({
@@ -32,7 +39,15 @@ import { ANombreComponent } from './components/atoms/lista-Estudiantes-K/a-nombr
     FormCrearCursoOrganismComponent,
     FormCrearCursoTemplateComponent,
     H2TituloComponent,
-    ANombreComponent
+    ANombreComponent,
+    ButtonsComponent,
+    H1Component,
+    H2Component,
+    H3Component,
+    IconComponent,
+    PComponent,
+    UrlComponent,
+    SubpaginasComponent
   ],
   imports: [
     CommonModule
@@ -50,7 +65,17 @@ import { ANombreComponent } from './components/atoms/lista-Estudiantes-K/a-nombr
     DivCursoComponent,
     DivDescriptComponent,
     FormCrearCursoOrganismComponent,
-    FormCrearCursoTemplateComponent
+    FormCrearCursoTemplateComponent,
+    H2TituloComponent,
+    ANombreComponent,
+    ButtonsComponent,
+    H1Component,
+    H2Component,
+    H3Component,
+    IconComponent,
+    PComponent,
+    UrlComponent,
+    SubpaginasComponent
   ]
 
 })
