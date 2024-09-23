@@ -1,0 +1,80 @@
+<div
+    id="speed-dial-menu-default"
+    class="fixed right-6 bottom-6 group"
+    (mouseenter)="openMenu()"
+    (mouseleave)="closeMenu()"
+    >
+    <div
+          id="speed-dial-menu-nested"
+          [ngClass]="{ 'hidden': !menuOpen, 'flex': menuOpen }"
+          class="flex-col items-center mb-4 space-y-2"
+        >
+          <!-- Botón 1 -->
+          <div class="relative flex items-center">
+            <button
+              type="button"
+              (click)="toggleTooltip(1)"
+              class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-100 hover:bg-gray-200 rounded-full border border-gray-200 dark:border-gray-600 shadow-sm"
+              (mouseenter)="showTooltip(1)"
+              (mouseleave)="hideTooltip(1)"
+            >
+
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9V4a1 1 0 0 0-1-1H8.914a1 1 0 0 0-.707.293L4.293 7.207A1 1 0 0 0 4 7.914V20a1 1 0 0 0 1 1h4M9 3v4a1 1 0 0 1-1 1H4m11 6v4m-2-2h4m3 0a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"/>
+              </svg>
+
+              <span class="sr-only">Crear Curso</span>
+            </button>
+            <span
+              class="absolute right-14 transition-opacity bg-gray-800 text-white text-xs rounded-md px-2 py-1 dark:bg-gray-600"
+              [ngClass]="{ 'opacity-0': !tooltipVisible[1], 'opacity-100': tooltipVisible[1] }"
+            >
+              Crear Curso
+            </span>
+          </div>
+      
+          <!-- Botón 2 -->
+          <div class="relative flex items-center">
+            <button
+              type="button"
+              (click)="toggleTooltip(2)"
+              class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-gray-100 hover:bg-gray-200 rounded-full border border-gray-200 dark:border-gray-600 shadow-sm"
+              (mouseenter)="showTooltip(2)"
+              (mouseleave)="hideTooltip(2)"
+            >
+            <app-icon class="h-5 w-5" src="../../../../../assets/icons/bote-de-basura.png"></app-icon>
+
+              <span class="sr-only">Eliminar Curso</span>
+            </button>
+            <span
+              class="absolute right-14 transition-opacity bg-gray-800 text-white text-xs rounded-md px-2 py-1 dark:bg-gray-600"
+              [ngClass]="{ 'opacity-0': !tooltipVisible[2], 'opacity-100': tooltipVisible[2] }"
+            >
+              Eliminar Curso
+            </span>
+          </div>
+      
+          <!-- Botón 3 -->
+          
+        </div>
+
+        <!-- Botón para abrir/cerrar el menú (puedes quitarlo si ya no es necesario) -->
+        <button
+          type="button"
+          (click)="toggleMenu()"
+          class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5 transition-transform"
+            [ngClass]="{ 'rotate-45': menuOpen }"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 18 18"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 9h12M9 3v12"></path>
+          </svg>
+          <span class="sr-only">Abrir acciones del menú</span>
+        </button>
+</div>

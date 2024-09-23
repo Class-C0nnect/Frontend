@@ -22,6 +22,8 @@ import { IconComponent } from './components/atoms/refactorizacion/icon/icon.comp
 import { PComponent } from './components/atoms/refactorizacion/p/p.component';
 import { UrlComponent } from './components/atoms/refactorizacion/url/url.component';
 import { SubpaginasComponent } from './components/molecules/subpaginas/subpaginas.component';
+import { SpeedDialProfesorComponent } from './components/molecules/speed-dial/speed-dial-profesor/speed-dial-profesor.component';
+import { SpeedDialAdministradorComponent } from './components/molecules/speed-dial/speed-dial-administrador/speed-dial-administrador.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { SubpaginasComponent } from './components/molecules/subpaginas/subpagina
     IconComponent,
     PComponent,
     UrlComponent,
-    SubpaginasComponent
+    SubpaginasComponent,
+    SpeedDialProfesorComponent,
+    SpeedDialAdministradorComponent
   ],
   imports: [
     CommonModule
@@ -75,7 +79,9 @@ import { SubpaginasComponent } from './components/molecules/subpaginas/subpagina
     IconComponent,
     PComponent,
     UrlComponent,
-    SubpaginasComponent
+    SubpaginasComponent,
+    SpeedDialProfesorComponent,
+    SpeedDialAdministradorComponent
   ]
 
 })
